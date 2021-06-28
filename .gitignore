@@ -355,3 +355,4 @@ MigrationBackup/
 
 # App Config
 appsettings.json
+*.SQL
