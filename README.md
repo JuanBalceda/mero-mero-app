@@ -3,7 +3,13 @@ Dating App project build with .Net 5 and Angular 12
 
 ## Getting started
 
-### Run Mero Mero backend
+### Run Mero Mero frontend (Angular app)
+```bash
+cd client
+ng serve
+```
+
+### Run Mero Mero backend (.Net app)
 ```bash
 cd API
 dotnet run
@@ -29,10 +35,6 @@ dotnet tool install --global dotnet-ef --version 5.0.7
 dotnet ef migrations add InitialCreate -o Data/Migrations
 # Update database
 dotnet ef database update
-```
-
-### Run Mero Mero backend
-```bash
-cd client
-ng serve
+# drop database
+dotnet ef database drop
 ```
